@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SIPS</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div id="inicio">
+        <div class="navbar">
+            <!-- Ruta de imagen ajustada para Thymeleaf -->
+            <img th:src="@{/img/unmsm.png}" alt="UNMSM Logo" class="logo">
+            <h1 class="logo">SIPS</h1>
+            <ul class="nav-links">
+                <li><a th:href="@{#inicio}">Inicio</a></li>
+                <li><a th:href="@{#quienes_somos}">Trabajos de grupo</a></li>
+                <li><a th:href="@{#main-footer}">Integrantes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h2>Grupo</h2>
+            <div class="line"></div>
+            <h1>SISTEMAS DISTRIBUIDOS</h1>
+        </div>
+    </header>
+
+    <section id="quienes_somos">
+        <div class="title">
+            <h1>Trabajos de grupo</h1>
+            <div class="line"></div>
+        </div>
+        <div></div>
+        <div class="title"	
+	        <h1>Archivos Disponibles</h1>
+	        <div class="line"></div>
+	    </div>
+	    <div class="row">
+	        <div class="col">
+	            <h3>Archivo 1</h3>
+	            <a href="https://docs.google.com/uc?id=1jDVDDQwOUix4_TOzc3rL1LLrm7fbrm-G" target="_blank">Ver Archivo 1</a>
+	        </div><!-- col -->
+	        <div class="col">
+	            <h3>Archivo 2</h3>
+	            <a href="https://drive.google.com/uc?id=FILE_ID_2" target="_blank">Ver Archivo 2</a>
+	        </div><!-- col -->
+	        <div class="col">
+	            <h3>Archivo 3</h3>
+	            <a href="https://drive.google.com/uc?id=FILE_ID_3" target="_blank">Ver Archivo 3</a>
+	        </div><!-- col -->
+	    </div><!-- row -->
+    </section>
+
+    <div id="main-footer">
+        <div class="container">
+            <p>2024 Todos los derechos reservados</p>
+        </div> <!-- container -->
+    </div> <!-- main-footer -->
+
+    <!-- Script para el menú móvil -->
+    <script th:src="@{/js/upload.js}"></script>
+</body>
+</html>

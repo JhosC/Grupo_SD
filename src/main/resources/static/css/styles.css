@@ -1,0 +1,46 @@
+/* Styles for the file listing */
+#archivos_subidos .container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#archivos_subidos h3 {
+    text-align: center;
+    color: #007bff;
+}
+
+#archivos_subidos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#archivos_subidos ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#archivos_subidos ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+#archivos_subidos ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for layout */
+#main-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
